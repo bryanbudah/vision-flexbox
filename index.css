@@ -1,0 +1,228 @@
+body{
+    background-color: rgb(86, 86, 165);
+    
+    height: 100vh;
+}
+img{
+    height:50px;
+    width: 50px;
+}
+.top-nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+    
+    
+}
+p{
+    color: white;
+    font-weight: bold;
+
+}
+box:hover{
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+a:hover{
+    height:150px;
+    width: 150px;
+    cursor: pointer;
+    font-size: larger;
+
+}
+.r{
+    background-color: rgb(196, 196, 233);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    display: inline;
+    margin-right: 200px;
+    padding: 5px;
+    width: 105px;
+    height: 36px;
+    margin-top: 10px;
+}
+.bookmarks{
+    margin-right: 500px;
+}
+.bookmarks:hover,.r:hover{
+    color:black;
+    background-color: white;
+
+}
+.search{
+    background-color: rgb(120, 120, 183);
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-around; /* Space items evenly */
+    width: 100%; /* Set a width for the container */
+
+}
+.imgmain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    padding: 8px;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: white;
+    border-style: solid;
+}
+.word{
+    text-align: center;
+    margin-top: 8px;
+      
+}
+.box{
+    height:100px;
+    width:100px;
+    background-color: aliceblue;
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */
+    
+}
+.box1{
+    height:100px;
+    width:100px;
+    background-color: rgb(218, 174, 91);
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */}
+
+    .word1{
+        text-align: center;
+        margin-top: 8px;
+    color: white; 
+    font-weight: bold;
+ }
+ .box2{
+    height:100px;
+    width:100px;
+    background-color:rgb(75, 141, 75);
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */}
+
+    .word2{
+        text-align: center;
+        margin-top: 8px;
+    color: white; 
+    font-weight: bold;
+ }
+ .box3{
+    height:100px;
+    width:100px;
+    background-color:white;
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */}
+
+    .word3{
+        text-align: center;
+        margin-top: 8px;
+    color:black; 
+    font-weight: bold;
+ }
+ .box4{
+    height:100px;
+    width:100px;
+    background-color:rgb(223, 88, 110);
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */}
+
+    .word4{
+        text-align: center;
+        margin-top: 8px;
+    color: white;
+    font-weight: bold;
+ }
+ .box5{
+    height:100px;
+    width:100px;
+    background-color:rgb(29, 29, 231);
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */}
+
+    .word5{
+        text-align: center;
+        margin-top: 8px;
+    color: white;
+    font-weight: bold;
+ }
+ .box6{
+    height:100px;
+    width:100px;
+    background-color:rgb(75, 141, 75);
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */}
+
+    .word6{
+        text-align: center;
+        margin-top: 8px;
+    color:white; 
+    font-weight: bold;
+ }
+ .box7{
+    height:100px;
+    width:100px;
+    background-color:black;
+    margin-right: 2px;
+    margin: 4px;
+    flex: 1 1 22%; /* Grow, shrink, and set base width */
+    min-width: 150px; /* Minimum width for each box */}
+
+    .word7{
+        text-align: center;
+        margin-top: 8px;
+    color: white; 
+    font-weight: bold;
+ }
+
+.wrapper{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+.footer{
+    text-align: center;
+    color:rgb(232, 163, 33);
+    margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+    .box {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .box {
+        flex: 1 1 45%; /* Two boxes in a row on medium screens */
+    }
+}
+
+@media (min-width: 901px) {
+    .box {
+        flex: 1 1 22%; /* Three boxes in a row on large screens */
+    }
+}
