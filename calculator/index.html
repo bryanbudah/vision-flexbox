@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<style>
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.container{
+ height: 300px;
+ width: 300px;
+background-color: grey;
+border-radius: 4px;
+display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+}
+.input{
+text-align: center;
+display: block;
+margin-top: 15px;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5px;
+    margin-top: 10px;
+    color:blue;
+    font-weight: bold;
+    top: 10px;
+    
+}
+button{
+    background-color: #eee;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+button:active {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+button:nth-last-child(1):active {
+    background-color: #28a745;
+}
+
+    
+</style>
+</head>
+<body>
+<div class="container">
+<div class="input">
+<div class="display" id="display">0</div>
+<div class="buttons">
+<button onclick="clearDisplay()">C</button>
+<button>DEL</button>
+<button onclick="appendToDisplay('1')">1</button>
+<button onclick="appendToDisplay('2')">2</button>
+<button onclick="appendToDisplay('3')">3</button>
+<button onclick="appendToDisplay('4')">4</button>
+ <button onclick="appendToDisplay('5')">5</button>
+ <button onclick="appendToDisplay('6')">6</button>
+ <button onclick="appendToDisplay('7')">7</button>
+<button onclick="appendToDisplay('8')">8</button>
+<button onclick="appendToDisplay('9')">9</button>
+<button onclick="appendToDisplay('0')">0</button>
+<button onclick="appendToDisplay('+')">+</button>
+<button onclick="appendToDisplay('-')">−</button>
+<button onclick="appendToDisplay('/')">÷</button>
+<button onclick="appendToDisplay('*')">×</button>
+<button onclick="calculateResult()">=</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
